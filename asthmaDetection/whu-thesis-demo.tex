@@ -1,0 +1,51 @@
+%% An Introduction to LaTeX Thesis Template of Wuhan University
+%%
+%% Created by WHUTUG
+
+\documentclass[type=bachelor]{whu-thesis}
+\usepackage[noend]{algpseudocode}
+\usepackage{algorithmicx,algorithm}
+\whusetup
+  {
+    info               =
+      {
+        title          = {基于咳嗽音音频分析的哮喘检测},
+        title*         = {},
+        student-number = {2017301500098},
+        school         = {计算机学院},
+        author         = {张建},
+        author*        = {},
+        subject        = {计算机科学与技术},
+        major          = {计算机科学与技术},
+        advisor        = {张健 , 教授},
+        direction      = {研究方向},
+        % date           = {2021/3},
+        keywords       = {哮喘检测,咳嗽音频，音频分析，迁移学习，VGG网络 , 机器学习，支持向量机},
+        keywords*      = {Asthma Detection, Cough audio, Audio Analysis, Transfer Learning, VGG Network, Machine Learning, Support Vector Machine},
+      },
+    style              =
+      {
+        graphics-path  = {{figures/}{data/}},
+        list-of-figures,
+        list-of-tables,
+      },
+    element            =
+      {
+        innovation     = {pages/innovation},
+        abstract       = {pages/abstract},
+        abstract*      = {pages/enabstract},
+        bibliography   = {ref/refs , ref/thu},
+        achievements   = {pages/achievements},
+        thanks         = {pages/thanks},
+        appendix       = {pages/appendix}
+      }
+  }
+
+\begin{document}
+%%----------- 主体部分 ----------- %%
+\include{pages/chapter1}
+\include{pages/chapter2}
+\include{pages/chapter3}
+\include{pages/chapter4}
+\include{pages/chapter5}
+\end{document}
